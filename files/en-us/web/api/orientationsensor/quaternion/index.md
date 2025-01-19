@@ -1,19 +1,12 @@
 ---
-title: OrientationSensor.quaternion
+title: "OrientationSensor: quaternion property"
+short-title: quaternion
 slug: Web/API/OrientationSensor/quaternion
-tags:
-  - API
-  - Generic Sensor API
-  - Orientation Sensor API
-  - OrientationSensor
-  - Property
-  - Reference
-  - Sensor
-  - Sensor APIs
-  - Sensors
+page-type: web-api-instance-property
 browser-compat: api.OrientationSensor.quaternion
 ---
-{{APIRef("Sensor API")}}
+
+{{securecontext_header}}{{APIRef("Sensor API")}}
 
 The **`quaternion`** read-only
 property of the {{domxref("OrientationSensor")}} interface returns a four element

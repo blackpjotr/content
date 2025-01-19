@@ -1,28 +1,18 @@
 ---
-title: SecurityPolicyViolationEvent.documentURI
+title: "SecurityPolicyViolationEvent: documentURI property"
+short-title: documentURI
 slug: Web/API/SecurityPolicyViolationEvent/documentURI
-tags:
-  - API
-  - CSP
-  - Experimental
-  - HTTP
-  - Property
-  - Reference
-  - Security
-  - SecurityPolicyViolationEvent
-  - documentURI
+page-type: web-api-instance-property
 browser-compat: api.SecurityPolicyViolationEvent.documentURI
 ---
-{{APIRef("{{HTTPSidebar}}")}}{{ SeeCompatTable() }}
 
-The **`documentURI`** read-only property of the
-{{domxref("SecurityPolicyViolationEvent")}} interface is a {{domxref("USVString")}}
-representing the URI of the document or worker in which the violation was found.
+{{APIRef("Reporting API")}}{{AvailableInWorkers}}
+
+The **`documentURI`** read-only property of the {{domxref("SecurityPolicyViolationEvent")}} interface is a string representing the URI of the document or worker in which the [Content Security Policy (CSP)](/en-US/docs/Web/HTTP/CSP) violation occurred.
 
 ## Value
 
-A {{domxref("USVString")}} representing the URI of the document or worker in which the
-violation was found.
+A string representing the URI of the document or worker in which the violation occurred.
 
 ## Examples
 
@@ -42,4 +32,4 @@ document.addEventListener("securitypolicyviolation", (e) => {
 
 ## See also
 
-- [Content Security Policy (CSP)](/en-US/docs/Web/HTTP/CSP)
+- {{domxref("CSPViolationReportBody.documentURL")}}

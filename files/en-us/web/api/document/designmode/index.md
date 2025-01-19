@@ -1,18 +1,12 @@
 ---
-title: Document.designMode
+title: "Document: designMode property"
+short-title: designMode
 slug: Web/API/Document/designMode
-tags:
-  - API
-  - Document
-  - HTML DOM
-  - NeedsContent
-  - NeedsSpecTable
-  - Property
-  - Reference
-  - editor
+page-type: web-api-instance-property
 browser-compat: api.Document.designMode
 ---
-{{ApiRef()}}
+
+{{APIRef}}
 
 **`document.designMode`** controls whether the entire document
 is editable. Valid values are `"on"` and `"off"`. According to the

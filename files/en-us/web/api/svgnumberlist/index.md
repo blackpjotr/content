@@ -1,13 +1,10 @@
 ---
 title: SVGNumberList
 slug: Web/API/SVGNumberList
-tags:
-  - API
-  - Reference
-  - SVG
-  - SVG DOM
+page-type: web-api-interface
 browser-compat: api.SVGNumberList
 ---
+
 {{APIRef("SVG")}}
 
 ## SVG number list interface
@@ -16,7 +13,7 @@ The `SVGNumberList` defines a list of {{ domxref("SVGNumber") }} objects.
 
 An `SVGNumberList` object can be designated as read only, which means that attempts to modify the object will result in an exception being thrown.
 
-> **Note:** Starting in {{ Gecko("5.0") }},the `SVGNumberList` DOM interface is now indexable and can be accessed like arrays.
+An `SVGNumberList` is indexable and can be accessed like an array.
 
 ### Interface overview
 
@@ -93,14 +90,14 @@ An `SVGNumberList` object can be designated as read only, which means that attem
   </tbody>
 </table>
 
-## Properties
+## Instance properties
 
-| Name                                          | Type          | Description                      |
-| --------------------------------------------- | ------------- | -------------------------------- |
-| `numberOfItems`                               | unsigned long | The number of items in the list. |
-| `length` {{ non-standard_inline() }} | unsigned long | The number of items in the list. |
+| Name                                                        | Type          | Description                      |
+| ----------------------------------------------------------- | ------------- | -------------------------------- |
+| {{domxref("SVGNumberList.numberOfItems", "numberOfItems")}} | unsigned long | The number of items in the list. |
+| {{domxref("SVGNumberList.length", "length")}}               | unsigned long | The number of items in the list. |
 
-## Methods
+## Instance methods
 
 <table class="standard-table">
   <thead>
@@ -113,7 +110,7 @@ An `SVGNumberList` object can be designated as read only, which means that attem
   <tbody>
     <tr>
       <td>
-        <code><strong>clear</strong>()</code>
+        <code><strong>{{domxref("SVGNumberList.clear", "clear")}}</strong>()</code>
       </td>
       <td><var>void</var></td>
       <td>
@@ -135,7 +132,7 @@ An `SVGNumberList` object can be designated as read only, which means that attem
     <tr>
       <td>
         <code
-          ><strong>initialize</strong>(in {{ domxref("SVGNumber") }}
+          ><strong>{{domxref("SVGNumberList.initialize", "initialize")}}</strong>(in {{ domxref("SVGNumber") }}
           <var>newItem</var>)</code
         >
       </td>
@@ -163,7 +160,7 @@ An `SVGNumberList` object can be designated as read only, which means that attem
     </tr>
     <tr>
       <td>
-        <code><strong>getItem</strong>(in unsigned long <var>index</var>)</code>
+        <code><strong>{{domxref("SVGNumberList.getItem", "getItem")}}</strong>(in unsigned long <var>index</var>)</code>
       </td>
       <td>{{ domxref("SVGNumber") }}</td>
       <td>
@@ -187,7 +184,7 @@ An `SVGNumberList` object can be designated as read only, which means that attem
     <tr>
       <td>
         <code
-          ><strong>insertItemBefore</strong>(in
+          ><strong>{{domxref("SVGNumberList.insertItemBefore", "insertItemBefore")}}</strong>(in
           {{ domxref("SVGNumber") }} <var>newItem</var>, in unsigned
           long <var>index</var>)</code
         >
@@ -225,7 +222,7 @@ An `SVGNumberList` object can be designated as read only, which means that attem
     <tr>
       <td>
         <code
-          ><strong>replaceItem</strong>(in {{ domxref("SVGNumber") }}
+          ><strong>{{domxref("SVGNumberList.replaceItem", "replaceItem")}}</strong>(in {{ domxref("SVGNumber") }}
           <var>newItem</var>, in unsigned long <var>index</var>)</code
         >
       </td>
@@ -259,7 +256,7 @@ An `SVGNumberList` object can be designated as read only, which means that attem
     <tr>
       <td>
         <code
-          ><strong>removeItem</strong>(in unsigned long <var>index</var>)</code
+          ><strong>{{domxref("SVGNumberList.removeItem", "removeItem")}}</strong>(in unsigned long <var>index</var>)</code
         >
       </td>
       <td>{{ domxref("SVGNumber") }}</td>
@@ -285,7 +282,7 @@ An `SVGNumberList` object can be designated as read only, which means that attem
     <tr>
       <td>
         <code
-          ><strong>appendItem</strong>(in {{ domxref("SVGNumber") }}
+          ><strong>{{domxref("SVGNumberList.appendItem", "appendItem")}}</strong>(in {{ domxref("SVGNumber") }}
           <var>newItem</var>)</code
         >
       </td>
@@ -310,6 +307,10 @@ An `SVGNumberList` object can be designated as read only, which means that attem
     </tr>
   </tbody>
 </table>
+
+## Specifications
+
+{{Specifications}}
 
 ## Browser compatibility
 

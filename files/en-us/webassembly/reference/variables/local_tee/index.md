@@ -1,19 +1,16 @@
 ---
 title: Local tee
 slug: WebAssembly/Reference/Variables/Local_tee
-tags:
-  - WebAssembly
-  - wasm
-  - Reference
-  - Variable
+page-type: webassembly-instruction
 ---
+
 {{WebAssemblySidebar}}
 
 The **`local.tee`** instruction sets the value of a local variable and loads the value onto the stack.
 
 The instruction is named after the T-splitter used in plumbing.
 
-{{EmbedInteractiveExample("pages/wat/local_tee.html")}}
+{{EmbedInteractiveExample("pages/wat/local_tee.html", "tabbed-taller")}}
 
 ## Syntax
 

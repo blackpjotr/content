@@ -1,18 +1,14 @@
 ---
-title: BluetoothRemoteGATTService.isPrimary
+title: "BluetoothRemoteGATTService: isPrimary property"
+short-title: isPrimary
 slug: Web/API/BluetoothRemoteGATTService/isPrimary
-tags:
-  - API
-  - Bluetooth
-  - BluetoothRemoteGATTService
-  - Experimental
-  - Property
-  - Reference
-  - Web Bluetooth API
-  - isPrimary
+page-type: web-api-instance-property
+status:
+  - experimental
 browser-compat: api.BluetoothRemoteGATTService.isPrimary
 ---
-{{SeeCompatTable}}
+
+{{APIRef("Bluetooth API")}}{{SeeCompatTable}}{{SecureContext_Header}}
 
 The **`BluetoothGATTService.isPrimary`** read-only property
 returns a boolean value that indicates whether this is a primary service. If it
@@ -29,5 +25,3 @@ A boolean value.
 ## Browser compatibility
 
 {{Compat}}
-
-{{APIRef("Web Bluetooth")}}

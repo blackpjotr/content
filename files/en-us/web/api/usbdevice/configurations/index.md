@@ -1,18 +1,14 @@
 ---
-title: USBDevice.configurations
+title: "USBDevice: configurations property"
+short-title: configurations
 slug: Web/API/USBDevice/configurations
-tags:
-  - API
-  - Property
-  - Reference
-  - USB
-  - USBDevice
-  - WebUSB
-  - WebUSB API
-  - configurations
+page-type: web-api-instance-property
+status:
+  - experimental
 browser-compat: api.USBDevice.configurations
 ---
-{{SeeCompatTable}}{{APIRef("WebUSB API")}}
+
+{{APIRef("WebUSB API")}}{{SeeCompatTable}}{{SecureContext_Header}}{{AvailableInWorkers}}
 
 The **`configurations`** read only property of the
 {{domxref("USBDevice")}} interface an {{jsxref("array")}} of device-specific interfaces

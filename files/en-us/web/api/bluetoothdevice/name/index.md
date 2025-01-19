@@ -1,30 +1,21 @@
 ---
-title: BluetoothDevice.name
+title: "BluetoothDevice: name property"
+short-title: name
 slug: Web/API/BluetoothDevice/name
-tags:
-  - API
-  - Bluetooth
-  - BluetoothDevice
-  - Experimental
-  - Property
-  - Reference
-  - Web Bluetooth API
-  - name
+page-type: web-api-instance-property
+status:
+  - experimental
 browser-compat: api.BluetoothDevice.name
 ---
-{{APIRef("Bluetooth API")}}{{SeeCompatTable}}
+
+{{APIRef("Bluetooth API")}}{{SeeCompatTable}}{{SecureContext_Header}}
 
 The **`BluetoothDevice.name`** read-only property returns a
-{{DOMxRef("DOMString")}} that provides a human-readable name for the device.
-
-> **Note:** This page describes the W3C Community Group BluetoothDevice.name property. For the
-> Firefox OS property of the same name, see
-> {{DOMxRef("BluetoothDevice_%28Firefox_OS%29/name", "BluetoothDevice.name
-    (Firefox OS)")}}.
+string that provides a human-readable name for the device.
 
 ## Value
 
-A {{DOMxRef("DOMString")}}.
+A string.
 
 ## Specifications
 

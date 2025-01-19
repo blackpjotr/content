@@ -1,16 +1,14 @@
 ---
-title: BluetoothDevice.gatt
+title: "BluetoothDevice: gatt property"
+short-title: gatt
 slug: Web/API/BluetoothDevice/gatt
-tags:
-  - API
-  - BluetoothDevice
-  - Experimental
-  - GATT server
-  - Property
-  - Reference
+page-type: web-api-instance-property
+status:
+  - experimental
 browser-compat: api.BluetoothDevice.gatt
 ---
-{{APIRef("Bluetooth API") }}{{SeeCompatTable}}
+
+{{APIRef("Bluetooth API") }}{{SeeCompatTable}}{{SecureContext_Header}}
 
 The
 **`BluetoothDevice.gatt`** read-only property returns

@@ -1,18 +1,14 @@
 ---
-title: USBDevice.usbVersionMinor
+title: "USBDevice: usbVersionMinor property"
+short-title: usbVersionMinor
 slug: Web/API/USBDevice/usbVersionMinor
-tags:
-  - API
-  - Property
-  - Reference
-  - USB
-  - USBDevice
-  - WebUSB
-  - WebUSB API
-  - usbVersionMinor
+page-type: web-api-instance-property
+status:
+  - experimental
 browser-compat: api.USBDevice.usbVersionMinor
 ---
-{{SeeCompatTable}}{{APIRef("WebUSB API")}}
+
+{{APIRef("WebUSB API")}}{{SeeCompatTable}}{{SecureContext_Header}}{{AvailableInWorkers}}
 
 The **`usbVersionMinor`** read only property of the
 {{domxref("USBDevice")}} interface is one of three properties that declare the USB

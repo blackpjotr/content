@@ -1,22 +1,11 @@
 ---
-title: RTCInboundRtpStreamStats.fecPacketsDiscarded
+title: "RTCInboundRtpStreamStats: fecPacketsDiscarded property"
+short-title: fecPacketsDiscarded
 slug: Web/API/RTCInboundRtpStreamStats/fecPacketsDiscarded
-tags:
-  - API
-  - Errors
-  - FEC
-  - Packets
-  - Property
-  - RTCInboundRtpStreamStats
-  - RTP
-  - Reference
-  - Statistics
-  - Stats
-  - WebRTC
-  - WebRTC API
-  - fecPacketsDiscarded
-browser-compat: api.RTCInboundRtpStreamStats.fecPacketsDiscarded
+page-type: web-api-instance-property
+browser-compat: api.RTCStatsReport.type_inbound-rtp.fecPacketsDiscarded
 ---
+
 {{APIRef("WebRTC")}}
 
 The **`fecPacketsDiscarded`** property

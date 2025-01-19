@@ -1,20 +1,17 @@
 ---
-title: AudioListener.upY
+title: "AudioListener: upY property"
+short-title: upY
 slug: Web/API/AudioListener/upY
-tags:
-  - API
-  - AudioListener
-  - Property
-  - Reference
-  - Web Audio API
-  - upY
+page-type: web-api-instance-property
 browser-compat: api.AudioListener.upY
 ---
+
 {{ APIRef("Web Audio API") }}
 
 The `upY` read-only property of the {{ domxref("AudioListener") }} interface is an {{domxref("AudioParam")}} representing the y value of the direction vector defining the up direction the listener is pointing in.
 
-> **Note:** The parameter is _a-rate_ when used with a {{domxref("PannerNode")}} whose {{domxref("PannerNode.panningModel", "PannerNode")}} is set to equalpower, or _k-rate_ otherwise.
+> [!NOTE]
+> The parameter is _a-rate_ when used with a {{domxref("PannerNode")}} whose {{domxref("PannerNode.panningModel", "PannerNode")}} is set to equalpower, or _k-rate_ otherwise.
 
 ## Value
 
@@ -22,7 +19,7 @@ An {{domxref("AudioParam")}}. Its default value is 1, and it can range between p
 
 ## Examples
 
-See [`BaseAudioContext.createPanner()`](/en-US/docs/Web/API/BaseAudioContext/createPanner#example) for example code.
+See [`BaseAudioContext.createPanner()`](/en-US/docs/Web/API/BaseAudioContext/createPanner#examples) for example code.
 
 ## Specifications
 

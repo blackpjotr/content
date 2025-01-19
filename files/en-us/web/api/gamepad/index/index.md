@@ -1,17 +1,12 @@
 ---
-title: Gamepad.index
+title: "Gamepad: index property"
+short-title: index
 slug: Web/API/Gamepad/index
-tags:
-  - API
-  - Gamepad API
-  - Games
-  - NeedsBetterSpecLink
-  - NeedsMarkupWork
-  - Property
-  - Reference
+page-type: web-api-instance-property
 browser-compat: api.Gamepad.index
 ---
-{{APIRef("Gamepad API")}}
+
+{{APIRef("Gamepad API")}}{{SecureContext_Header}}
 
 The **`Gamepad.index`** property of the {{domxref("Gamepad") }}
 interface returns an integer that is auto-incremented to be unique for each device
@@ -27,9 +22,9 @@ A {{jsxref("number") }}.
 ## Examples
 
 ```js
-window.addEventListener("gamepadconnected", function() {
-  var gp = navigator.getGamepads()[0];
-  gamepadInfo.innerHTML = "Gamepad connected at index " + gp.index + ": " + gp.id + ".";
+window.addEventListener("gamepadconnected", () => {
+  const gp = navigator.getGamepads()[0];
+  gamepadInfo.textContent = `Gamepad connected at index ${gp.index}: ${gp.id}.`;
 });
 ```
 

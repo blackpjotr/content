@@ -1,21 +1,11 @@
 ---
-title: AudioTrack.label
+title: "AudioTrack: label property"
+short-title: label
 slug: Web/API/AudioTrack/label
-tags:
-  - API
-  - Audio
-  - Audio Track
-  - AudioTrack
-  - HTML DOM
-  - Media
-  - Property
-  - Read-only
-  - Reference
-  - label
-  - metadata
-  - track
+page-type: web-api-instance-property
 browser-compat: api.AudioTrack.label
 ---
+
 {{APIRef("HTML DOM")}}
 
 The read-only **{{domxref("AudioTrack")}}**
@@ -25,7 +15,7 @@ string.
 
 ## Value
 
-A {{domxref("DOMString")}} specifying the track's human-readable label, if one is
+A string specifying the track's human-readable label, if one is
 available in the track metadata. Otherwise, an empty string (`""`) is
 returned.
 
@@ -41,17 +31,21 @@ only allow certain track kinds through.
 
 ```js
 function getTrackList(el) {
-  var trackList = [];
+  const trackList = [];
   const wantedKinds = [
-    "main", "alternative", "main-desc", "translation", "commentary"
+    "main",
+    "alternative",
+    "main-desc",
+    "translation",
+    "commentary",
   ];
 
-  el.audioTracks.forEach(function(track) {
+  el.audioTracks.forEach((track) => {
     if (wantedKinds.includes(track.kind)) {
       trackList.push({
         id: track.id,
         kind: track.kind,
-        label: track.label
+        label: track.label,
       });
     }
   });
@@ -61,8 +55,7 @@ function getTrackList(el) {
 
 The resulting `trackList` contains an array of audio tracks whose
 `kind` is one of those in the array `wantedKinds`, with each entry
-providing the track's {{domxref("AudioTrack.id", "id")}}, {{domxref("AudioTrack.kind",
-  "kind")}}, and {{domxref("AudioTrack.label", "label")}}.
+providing the track's {{domxref("AudioTrack.id", "id")}}, {{domxref("AudioTrack.kind", "kind")}}, and `label`.
 
 ## Specifications
 

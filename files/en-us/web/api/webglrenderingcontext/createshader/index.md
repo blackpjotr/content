@@ -1,16 +1,12 @@
 ---
-title: WebGLRenderingContext.createShader()
+title: "WebGLRenderingContext: createShader() method"
+short-title: createShader()
 slug: Web/API/WebGLRenderingContext/createShader
-tags:
-  - API
-  - Graphics
-  - Method
-  - Reference
-  - Shader
-  - WebGL
+page-type: web-api-instance-method
 browser-compat: api.WebGLRenderingContext.createShader
 ---
-{{APIRef("WebGL")}}
+
+{{APIRef("WebGL")}}{{AvailableInWorkers}}
 
 The {{domxref("WebGLRenderingContext")}}
 method **`createShader()`** of the [WebGL API](/en-US/docs/Web/API/WebGL_API) creates a
@@ -20,14 +16,18 @@ method **`createShader()`** of the [WebGL API](/en-US/docs/Web/API/WebGL_API) cr
 
 ## Syntax
 
-```js
-WebGLShader gl.createShader(type);
+```js-nolint
+createShader(type)
 ```
 
 ### Parameters
 
 - `type`
   - : Either `gl.VERTEX_SHADER` or `gl.FRAGMENT_SHADER`
+
+### Return value
+
+A new ({{domxref("WebGLShader")}}).
 
 ## Examples
 
@@ -49,7 +49,6 @@ See {{domxref("WebGLShader")}} for usage and examples.
 - {{domxref("WebGLRenderingContext.bindAttribLocation()")}}
 - {{domxref("WebGLRenderingContext.compileShader()")}}
 - {{domxref("WebGLRenderingContext.createProgram()")}}
-- {{domxref("WebGLRenderingContext.createShader()")}}
 - {{domxref("WebGLRenderingContext.deleteProgram()")}}
 - {{domxref("WebGLRenderingContext.deleteShader()")}}
 - {{domxref("WebGLRenderingContext.detachShader()")}}

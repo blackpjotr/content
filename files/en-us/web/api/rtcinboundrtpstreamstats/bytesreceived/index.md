@@ -1,23 +1,11 @@
 ---
-title: RTCInboundRtpStreamStats.bytesReceived
+title: "RTCInboundRtpStreamStats: bytesReceived property"
+short-title: bytesReceived
 slug: Web/API/RTCInboundRtpStreamStats/bytesReceived
-tags:
-  - API
-  - Media
-  - Networking
-  - Performance
-  - Property
-  - RTCInboundRtpStreamStats
-  - RTP
-  - Reference
-  - Statistics
-  - Stats
-  - WebRTC
-  - WebRTC API
-  - bytesReceived
-  - stream
-browser-compat: api.RTCInboundRtpStreamStats.bytesReceived
+page-type: web-api-instance-property
+browser-compat: api.RTCStatsReport.type_inbound-rtp.bytesReceived
 ---
+
 {{APIRef("WebRTC")}}
 
 The {{domxref("RTCInboundRtpStreamStats")}} dictionary's

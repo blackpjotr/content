@@ -1,34 +1,24 @@
 ---
-title: XMLHttpRequest.response
+title: "XMLHttpRequest: response property"
+short-title: response
 slug: Web/API/XMLHttpRequest/response
-tags:
-  - AJAX
-  - API
-  - Fetching Content
-  - Fetching Data
-  - Loading Data
-  - Property
-  - Read-only
-  - Reading Data
-  - Reference
-  - Response
-  - Server
-  - XMLHttpRequest
+page-type: web-api-instance-property
 browser-compat: api.XMLHttpRequest.response
 ---
-{{APIRef('XMLHttpRequest')}}
+
+{{APIRef("XMLHttpRequest API")}} {{AvailableInWorkers("window_and_worker_except_service")}}
 
 The {{domxref("XMLHttpRequest")}}
 **`response`** property returns the response's body content as
-an {{jsxref("ArrayBuffer")}}, {{domxref("Blob")}}, {{domxref("Document")}},
-JavaScript {{jsxref("Object")}}, or {{domxref("DOMString")}}, depending on the value
+an {{jsxref("ArrayBuffer")}}, a {{domxref("Blob")}}, a {{domxref("Document")}},
+a JavaScript {{jsxref("Object")}}, or a string, depending on the value
 of the request's {{domxref("XMLHttpRequest.responseType", "responseType")}}
 property.
 
 ## Value
 
-An appropriate object based on the value of {{domxref("XMLHttpRequest.responseType",
-  "responseType")}}. You may attempt to request the data be provided in a specific format
+An appropriate object based on the value of {{domxref("XMLHttpRequest.responseType", "responseType")}}.
+You may attempt to request the data be provided in a specific format
 by setting the value of `responseType` after calling
 {{domxref("XMLHttpRequest.open", "open()")}} to initialize the request but before
 calling {{domxref("XMLHttpRequest.send", "send()")}} to send the request to the server.
@@ -51,19 +41,19 @@ The content is handled as raw text data (since nothing here is overriding the de
 {{domxref("XMLHttpRequest.responseType", "responseType")}}).
 
 ```js
-var url = 'somePage.html'; //A local page
+const url = "somePage.html"; //A local page
 
 function load(url, callback) {
-  var xhr = new XMLHttpRequest();
+  const xhr = new XMLHttpRequest();
 
-  xhr.onreadystatechange = function() {
+  xhr.onreadystatechange = () => {
     if (xhr.readyState === 4) {
       callback(xhr.response);
     }
-  }
+  };
 
-  xhr.open('GET', url, true);
-  xhr.send('');
+  xhr.open("GET", url, true);
+  xhr.send("");
 }
 ```
 
@@ -77,7 +67,6 @@ function load(url, callback) {
 
 ## See also
 
-- [Using
-  XMLHttpRequest](/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
+- [Using XMLHttpRequest](/en-US/docs/Web/API/XMLHttpRequest_API/Using_XMLHttpRequest)
 - Getting text and HTML/XML data: {{domxref("XMLHttpRequest.responseText")}} and
   {{domxref("XMLHttpRequest.responseXML")}}

@@ -1,22 +1,12 @@
 ---
-title: AudioTrack.sourceBuffer
+title: "AudioTrack: sourceBuffer property"
+short-title: sourceBuffer
 slug: Web/API/AudioTrack/sourceBuffer
-tags:
-  - API
-  - Audio
-  - AudioTrack
-  - HTML DOM
-  - MSE
-  - Media
-  - Media Source Extensions
-  - Property
-  - Read-only
-  - Reference
-  - SourceBuffer
-  - track
+page-type: web-api-instance-property
 browser-compat: api.AudioTrack.sourceBuffer
 ---
-{{APIRef("HTML DOM")}}
+
+{{APIRef("Media Source Extensions")}}
 
 The read-only **{{domxref("AudioTrack")}}**
 property **`sourceBuffer`** returns the
